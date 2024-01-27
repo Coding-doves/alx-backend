@@ -3,6 +3,7 @@
 return a tuple of size two containing a start index/item
 and an end index/item
 '''
+from typing import Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
