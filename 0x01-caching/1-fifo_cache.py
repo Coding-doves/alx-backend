@@ -4,6 +4,7 @@
 from base_caching import BaseCaching
 from collections import OrderedDict
 
+
 class FIFOCache(BaseCaching):
     ''' FIFOCache '''
 
@@ -26,4 +27,3 @@ class FIFOCache(BaseCaching):
         if key is None or key not in self.cache_data:
             return None
         return self.cache_data.get(key)
-
