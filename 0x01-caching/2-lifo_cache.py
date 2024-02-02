@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""BasicCache module"""
+"""LIFOCache module"""
 
 from base_caching import BaseCaching
 from collections import OrderedDict
 
 
 class LIFOCache(BaseCaching):
-    ''' FIFOCache '''
+    ''' LIFOCache '''
 
     def __init__(self):
         ''' initialing '''
