@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from flask import Flask, render_template
 from flask_babel import Babel
+''' app '''
 
 
 class Config():
@@ -18,6 +19,7 @@ babel = Babel(app)
 
 @app.route("/")
 def index():
+    ''' app '''
     return render_template('1-index.html')
 
 
