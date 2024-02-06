@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 from flask_babel import Babel
 
 
-class Config():
+class Config:
     ''' config '''
     LANGUAGES = ["en", "fr"]
 
@@ -14,6 +14,7 @@ class Config():
 app = Flask(__name__)
 app.config.from_object(Config)
 babel = Babel(app)
+
 
 @babel.localeselector
 def get_locale():
@@ -26,5 +27,5 @@ def index():
     return render_template('3-index.html')
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     app.run()

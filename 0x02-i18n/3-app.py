@@ -15,6 +15,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 babel = Babel(app)
 
+
 @babel.localeselector
 def get_locale():
     ''' accepted languages '''
@@ -26,5 +27,5 @@ def index():
     return render_template('3-index.html')
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     app.run()
