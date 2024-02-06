@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+''' app '''
+
 from flask import Flask, render_template, request
 from flask_babel import Babel
 
@@ -24,6 +26,7 @@ def get_locale():
 
 @app.route("/")
 def index():
+    ''' app '''
     return render_template('3-index.html')
 
 
